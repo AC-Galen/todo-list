@@ -8,6 +8,7 @@ const methodOverride = require('method-override')
 const Todo = require('./models/todo')// 載入 Todo model
 
 const routes = require('./routes')
+require('./config/mongoose')
 
 const app = express()
 
