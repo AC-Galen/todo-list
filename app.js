@@ -31,11 +31,11 @@ app.set('view engine', 'hbs')
 //設定每一筆請求都會透過 methodOverride 進行前置處理
 app.use(methodOverride('_method'))
 
-app.use(routes)
 
 // 用 app.use 規定每一筆請求都需要透過 body-parser 進行前置處理
 app.use(bodyParser.urlencoded({ extended: true }))
 
+app.use(routes)
 
 //設定port 3000
 app.listen(3000, () => {
