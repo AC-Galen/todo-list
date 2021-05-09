@@ -5,8 +5,6 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')  // 引用 body-parser
 const methodOverride = require('method-override')
 
-const Todo = require('./models/todo')// 載入 Todo model
-
 const routes = require('./routes')
 require('./config/mongoose')
 
